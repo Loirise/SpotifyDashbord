@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Spotify Dashboard</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__block">
+
+        <div class="main__nav">
+          <img class="nav__logo" src="/images/spotify-logo.png" alt="Spotify Logo">
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/homesvg.svg" alt="Home"></a>
+            <figcaption>Home</figcaption>
+          </figure>
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/favourites-icon.svg" alt="Favourites"></a>
+            <figcaption>Favourites</figcaption>
+          </figure>
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/add-icon.svg" alt="Add playlist"></a>
+            <figcaption>New playlist</figcaption>
+          </figure>
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/playlist-icon.svg" alt="Playlists"></a>
+            <figcaption>Playlists</figcaption>
+          </figure>
+          <figure class="friendslist">
+            <a href="#"><img class="nav__icon" src="/images/icons/friends-icon.svg" alt="Friendlist"></a>
+            <figcaption>Friendlist</figcaption>
+          </figure>
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/options-icon.svg" alt="Options"></a>
+            <figcaption>Options</figcaption>
+          </figure>
+          <figure>
+            <a href="#"><img class="nav__icon" src="/images/icons/logout-icon.svg" alt="Logout"></a>
+            <figcaption>Logout</figcaption>
+          </figure>
+        </div>
+
+        <div class="main__content">
+          <div class="main__content__top">
+            <div class="content__top__searchbar">
+              <a href="#"><img class="top__icon" src="/images/icons/back-icon.svg" alt="Go Back"></a>
+              <a href="#"><img class="top__icon" src="/images/icons/next-icon.svg" alt="Next"></a>
+              <div class="wrapper">
+                <div class="searchbar">
+                  <input type="text" id="searchQueryInput" name="searchQueryInput" placeholder="Find an artist" value="">
+                  <button type="submit" id="searchQuerySubmit" name="searchQuerySubmit">
+                    <img class="top__searchicon" src="/images/icons/search-icon.svg" alt="Search">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__content__block">
+            <h1 class="block__artistname">Cyberpunk 2077 OST</h1>
+            <div class="block__info">
+              <button class="info__follow"><a href="#">Follow</a></button>
+              <button class="info__genre"><a href="#">Cyberpunk</a></button>
+              <button class="info__genre"><a href="#">Electro</a></button>
+              <button class="info__genre"><a href="#">Industrial</a></button>
+              <button class="info__genre"><a href="#">Rock</a></button>
+              <div class="block__info__listeners">
+                <p>Monthly Listeners</p>
+                <p>891,234</p>
+              </div>
+            </div>
+            <div class="block__topsongs">
+              <div class="topsongs__categories">
+                <h2>Top songs</h2>
+                <div>
+                  <a href="#"><sub>Week</sub></a>
+                  <a href="#"><sub>Month</sub></a>
+                  <a href="#"><sub>Year</sub></a>
+                  <a href="#"><sub class="category--selected">All time</sub></a>
+                </div>
+                
+              </div>
+              <div class="topsongs__table">
+                <table class="table">
+
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col">Track / Album</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Plays</th>
+                      <th scope="col">Add</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                        <img class="row__albumcover" src="/images/cyberpunk-2077-original-score-ep.jpg" alt="Album Cover">
+                      </td>
+                      <td>
+                        <img class="row__playicon active" src="/images/icons/play-white-icon.svg" alt="Play">
+                      </td>
+                      <td>
+                        <div>
+                          <p class="row__title">The Rebel Path</p>
+                          <p class="row__album">Cyberpunk 2077 - Original Score</p>
+                        </div>
+                      </td>
+                      <td>4:10</td>
+                      <td>14,058,111</td>
+                      <td>
+                        <img class="footer__icon" src="/images/icons/heart-filled-icon.svg" alt="Not Added">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                        <img class="row__albumcover" src="/images/cyberpunk-2077-original-score-ep.jpg" alt="Album Cover">
+                      </td>
+                      <td>
+                        <img class="row__playicon" src="/images/icons/play-white-icon.svg" alt="Play">
+                      </td>
+                      <td>
+                        <div>
+                          <p class="row__title">Never Fade Away (SAMURAI Cover)</p>
+                          <p class="row__album">Cyberpunk 2077 - Original Score</p>
+                        </div>
+                      </td>
+                      <td>4:46</td>
+                      <td>15,201,843</td>
+                      <td>
+                        <img class="footer__icon" src="/images/icons/heart-white-icon.svg" alt="Not Added">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                        <img class="row__albumcover" src="/images/cyberpunk-2077-original-score-ep.jpg" alt="Album Cover">
+                      </td>
+                      <td>
+                        <img class="row__playicon" src="/images/icons/play-white-icon.svg" alt="Play">
+                      </td>
+                      <td>
+                        <div>
+                          <p class="row__title">Chippin' In</p>
+                          <p class="row__album">Cyberpunk 2077 - Original Score</p>
+                        </div>
+                      </td>
+                      <td>3:35</td>
+                      <td>6,138,390</td>
+                      <td>
+                        <img class="footer__icon" src="/images/icons/heart-filled-icon.svg" alt="Not Added">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                        <img class="row__albumcover" src="/images/cyberpunk-2077-original-score-ep.jpg" alt="Album Cover">
+                      </td>
+                      <td>
+                        <img class="row__playicon" src="/images/icons/play-white-icon.svg" alt="Play">
+                      </td>
+                      <td>
+                        <div>
+                          <p class="row__title">Outsider No More</p>
+                          <p class="row__album">Cyberpunk 2077 - Original Score</p>
+                        </div>
+                      </td>
+                      <td>3:50</td>
+                      <td>3,194,134</td>
+                      <td>
+                        <img class="footer__icon" src="/images/icons/heart-white-icon.svg" alt="Not Added">
+                      </td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__friends">
+          <h2>Friend Activity</h2>
+          <div class="friends__list">
+
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Melissa Smith</b></p>
+                <p class="friend__info__song">Demi Lovato - Sorry not..</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Alexander Popovic</b></p>
+                <p class="friend__info__song">Blink-182 - Apple Shamp..</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Matt Demian</b></p>
+                <p class="friend__info__song">New Found Glory - Dress..</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Kahwai James</b></p>
+                <p class="friend__info__song">Sum 41 - Fat Lip</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>James Holmes</b></p>
+                <p class="friend__info__song">James Brown - Get up..</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Travis Kepper</b></p>
+                <p class="friend__info__song">Jack Johnson - Banana..</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon">
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon" hidden>
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Melanie Wathne</b></p>
+                <p class="friend__info__song">Billie Eilish - Bad Guy</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon" hidden>
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon">
+            </div>
+            <div class="friends__list__block">
+              <img class="personphoto" src="/images/person-photo.png" alt="Friend Photo">
+              <div class="friend__info">
+                <p><b>Avril Albany</b></p>
+                <p class="friend__info__song">Pantera - 5 Minutes Alone</p>
+              </div>
+              <img class="activityicon" src="/images/icons/online-icon.svg" alt="Online Icon" hidden>
+              <img class="activityicon" src="/images/icons/offline-icon.svg" alt="Offline Icon">
+            </div>
+
+            
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="main__footer">
+        <img class="footer__albumimg" src="/images/cyberpunk-2077-original-score-ep.jpg" alt="Album Image">
+        <div class="footer__songinfo">
+          <p class="songinfo__title"><b>The Rebel Path</b></p>
+          <p class="songinfo__artist">P.T. Adamczyk</p>
+        </div>
+        <div class="footer__buttons">
+          <a href="#"><img class="footer__icon" src="/images/icons/back-icon.svg" alt="Previous"></a>
+          <img class="footer__icon play" src="/images/icons/play-icon.svg" alt="Play">
+          <img class="footer__icon pause" src="/images/icons/pause-icon.svg" alt="Pause" hidden>
+          <a href="#"><img class="footer__icon" src="/images/icons/next-icon.svg" alt="Next"></a>
+        </div>
+        <div class="footer__slider">
+          <p class="slider__time">0:00</p>
+          <input class="songslider" type="range" min="0" max="100" value="0" step="1">
+          <p class="slider__endtime">4:10</p>
+        </div>
+        <div class="footer__other">
+          <a href="#"><img class="footer__icon" src="/images/icons/list-icon.svg" alt="Playlist"></a>
+          <img class="footer__icon" src="/images/icons/heart-empty-icon.svg" alt="Favourite" hidden>
+          <img class="footer__icon" src="/images/icons/heart-filled-icon.svg" alt="Liked">
+          <div class="volumeslider__block">
+            <img class="footer__icon" src="/images/icons/volume-icon.svg" alt="Volume">
+            <input class="volumeslider" type="range" min="0" max="100" value="40" step="1">
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
